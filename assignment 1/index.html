@@ -1,0 +1,35 @@
+<DOCTYPE html>
+<html>
+    <title>Addissu Tamru</title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+ <body>
+    
+    
+    
+</body>  
+    <script>
+        document.getElementById("button").innerHTML = formatAMPM();
+
+    var d = new Date(),
+    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+    ampm = d.getHours() >= 12 ? 'pm' : 'am',
+    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+    days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
+
+    </script>
+    
+<h1>This is my website</h1>   
+    <p>Although I know HTML/CSS, this is a great refresher if I get lost I just  <a href="http://www.google.com" id="pic">google</a>what im looking for</p>
+    <img src="img/html5.png">
+    
+    <button id="button" type="button" onclick="myFunction">Submit</button>
+    
+</html>
+
+
+
+</DOCTYPE>
